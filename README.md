@@ -5,6 +5,9 @@ This project was done for CS131: Computer Vision Foundations and Applications, a
 - Model can be found here: [LINK TO MODEL](https://huggingface.co/Adriatogi/segformer-b0-finetuned-segments-graffiti)
 - Dataset can be found here: [LINK TO DATASET](https://huggingface.co/datasets/Adriatogi/graffiti)
 
+## Files
+- [initial_exploration.ipynb](initial_exploration.ipynb): I explored the task of segmenting graffiti through other methods, such as kmeans segmentation, edge and region segmentation, and watershed segmentation. They would prove unsuccesful to adequately segment an image. This file is optional
+
 ## Abstract
 This paper presents an implementation of SegFormer, a pre-trained segmentation model compromised of Transformer encoders and multi-layer perceptron (MLP) decoders, to segment graffiti from images. To achieve this, we had to first create a dataset of graffiti images with respective labels. We would then use this dataset to train our model to acheive a 92\% test accuracy in segmenting graffiti from images.
 
