@@ -6,7 +6,12 @@ This project was done for CS131: Computer Vision Foundations and Applications, a
 - Dataset can be found here: [LINK TO DATASET](https://huggingface.co/datasets/Adriatogi/graffiti)
 
 ## Files
+- [cs131_final_model.ipynb](cs131_final_model.ipynb): This file contains the loading of the dataset, the training, evaluation, and uploading of the fine-tuned model. It was made to run on colab. 
+- [data/](data/): data directory for images and labels. Annotations/ are taken and turned into respective masks/ for imgs/. New_imgs/ are images that can be tested that arent in the hugging face dataset.
+- [dataset_creation.ipynb](dataset_creation.ipynb): Process annotations and images to create a dataset that is uploaded to hugging face
 - [initial_exploration.ipynb](initial_exploration.ipynb): I explored the task of segmenting graffiti through other methods, such as kmeans segmentation, edge and region segmentation, and watershed segmentation. They would prove unsuccesful to adequately segment an image. This file is optional
+- [get_data.ipynb](get_data.ipynb): This notebook was made to live in https://huggingface.co/datasets/artificialhoney/graffiti. It is meant to page through the graffiti dataset so I can pick out suitable images for my dataset.
+
 
 ## Abstract
 This paper presents an implementation of SegFormer, a pre-trained segmentation model compromised of Transformer encoders and multi-layer perceptron (MLP) decoders, to segment graffiti from images. To achieve this, we had to first create a dataset of graffiti images with respective labels. We would then use this dataset to train our model to acheive a 92\% test accuracy in segmenting graffiti from images.
